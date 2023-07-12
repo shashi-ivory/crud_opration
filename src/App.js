@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import React, { useState } from "react";
+import TextFrom from "./Component/TextFrom";
 
 function App() {
+  const [num, setNum] = useState("");
+  var handleNum = () => {};
+
+  // const updatedNums = numbers.map((number)=>{
+  //     return (number + 2);
+  // );
+
+  // console.log(updatedNums);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TextFrom />
     </div>
   );
 }
